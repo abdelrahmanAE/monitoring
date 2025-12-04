@@ -11,15 +11,28 @@
   </head>
   <body class="min-h-screen">
     <!-- Header & Hero Section -->
-    <header class="bg-indigo-700 text-white py-16 px-4 sm:px-6 lg:px-8">
-      <div class="max-w-7xl mx-auto flex flex-col items-center text-center">
-        <h1 class="text-5xl sm:text-6xl font-extrabold tracking-tight mb-2">
-          <span class="text-red-500">TEAM</span>
-          <span class="text-red-500">SHANBO</span>
+    <header class="py-16 px-4 sm:px-6 lg:px-8">
+      <div class="hero-inner text-center mx-auto">
+        <nav class="top-nav mb-4">
+          <a href="#" class="">Home</a>
+          <a href="#cp-page" onclick="showPage('cp-page')">Sessions</a>
+          <a href="#oop-page" onclick="showPage('oop-page')">Courses</a>
+          <a href="#" class="">Mentors</a>
+        </nav>
+
+        <h1
+          class="hero-title text-5xl sm:text-6xl font-extrabold tracking-tight mb-2"
+        >
+          <span class="inline-block mr-2 team-text-gradient">TEAM</span>
+          <span class="inline-block shanbo-text-gradient">SHANBO</span>
         </h1>
-        <p class="text-indigo-200 text-xl sm:text-2xl font-light">
-          Your roadmap to mastering Competitive Programming and Software
-          Engineering.
+        <div class="hero-mono robot-text">
+          Competitive Programming Monitoring Team By COACH SHANBO
+        </div>
+
+        <p class="text-indigo-100/90 text-lg sm:text-xl font-medium mt-6">
+          Monitoring team progress in CP and Science, tracking student
+          performance, and managing their competitive programming journey.
         </p>
       </div>
     </header>
@@ -32,7 +45,7 @@
           <!-- CP Card (Now Clickable) -->
           <div
             onclick="showPage('cp-page')"
-            class="clickable-card bg-white p-6 rounded-xl card-shadow"
+            class="clickable-card feature-card bg-white p-6 rounded-xl card-shadow"
           >
             <h2
               class="text-3xl font-bold text-indigo-800 mb-4 flex items-center"
@@ -41,15 +54,15 @@
               <span class="ml-auto text-xl text-gray-400">→</span>
             </h2>
             <p class="text-gray-600 mb-4">
-              Our Sessions, Codeforces groups, and Vjudge resources. Click for
-              links.
+              Monitor sessions, track progress, access Codeforces groups, and
+              manage team resources.
             </p>
           </div>
 
           <!-- OOP Card (Now Clickable) -->
           <div
             onclick="showPage('oop-page')"
-            class="clickable-card bg-white p-6 rounded-xl card-shadow"
+            class="clickable-card feature-card bg-white p-6 rounded-xl card-shadow"
           >
             <h2
               class="text-3xl font-bold text-indigo-800 mb-4 flex items-center"
@@ -64,7 +77,7 @@
 
           <!-- Database Card (Unchanged) -->
           <section
-            class="bg-white p-6 rounded-xl card-shadow transition duration-300 hover:shadow-xl hover:translate-y-[-2px]"
+            class="feature-card bg-white p-6 rounded-xl card-shadow transition duration-300 hover:shadow-xl hover:translate-y-[-2px]"
           >
             <h2
               class="text-3xl font-bold text-indigo-800 mb-4 flex items-center"
@@ -83,7 +96,7 @@
 
           <!-- SOLID Principles Card (Unchanged) -->
           <section
-            class="bg-white p-6 rounded-xl card-shadow transition duration-300 hover:shadow-xl hover:translate-y-[-2px]"
+            class="feature-card bg-white p-6 rounded-xl card-shadow transition duration-300 hover:shadow-xl hover:translate-y-[-2px]"
           >
             <h2
               class="text-3xl font-bold text-indigo-800 mb-4 flex items-center"
@@ -126,7 +139,7 @@
           Back to Hub
         </button>
         <h2 class="text-4xl font-extrabold text-indigo-700 mb-8">
-          Competitive Programming (CP) Resources
+          Competitive Programming Monitoring & Resources
         </h2>
 
         <div class="space-y-6">
@@ -163,6 +176,15 @@
             <span>Codeforces Contests Group Link</span>
             <span class="text-3xl">🏆</span>
           </button>
+          <!-- Dashboard Button - Opens Student Progress Dashboard -->
+          <button
+            onclick="window.location.href='dashboard.html'"
+            class="w-full bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 text-white font-extrabold py-5 px-6 rounded-xl card-shadow text-2xl flex items-center justify-between transition duration-300 transform hover:scale-[1.01] shadow-lg"
+          >
+            <span> Dashboard - Student Progress</span>
+            <span class="text-3xl">📊</span>
+          </button>
+
           <button
             onclick="window.open('https://vjudge.net/group/icpc-thebes-Level-1-2026', '_blank')"
             class="w-full bg-yellow-500 hover:bg-yellow-600 text-indigo-900 font-extrabold py-5 px-6 rounded-xl card-shadow text-2xl flex items-center justify-between transition duration-300 transform hover:scale-[1.01]"
