@@ -87,17 +87,6 @@ function closeLanguageSelection() {
   langModal.classList.remove("flex");
 }
 
-// --- Interactive Button Logic (for the top "Log Progress" button) ---
-(() => {
-  const progressBtn = document.getElementById("progress-button");
-  if (!progressBtn) return;
-  progressBtn.addEventListener("click", () => {
-    showModal(
-      "Progress Tracking Feature",
-      'This button will link to your "Write hint form" or a dedicated application for students to log their weekly progress and track their learning journey. Excellent initiative!'
-    );
-  });
-})();
 
 // --- Arabic Quote Rotator (10 quotes, change every 5 seconds) ---
 document.addEventListener("DOMContentLoaded", () => {
