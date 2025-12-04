@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TEAM SHANBO</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Link to external stylesheet -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="min-h-screen">
+    <!-- Header & Hero Section -->
+    <header class="bg-indigo-700 text-white py-16 px-4 sm:px-6 lg:px-8">
+      <div class="max-w-7xl mx-auto flex flex-col items-center text-center">
+        <h1 class="text-5xl sm:text-6xl font-extrabold tracking-tight mb-2">
+          <span class="text-red-500">TEAM</span>
+          <span class="text-red-500">SHANBO</span>
+        </h1>
+        <p class="text-indigo-200 text-xl sm:text-2xl font-light">
+          Your roadmap to mastering Competitive Programming and Software
+          Engineering.
+        </p>
+      </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+      <!-- 1. MAIN HUB CONTENT (Initial View) -->
+      <div id="main-content">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <!-- CP Card (Now Clickable) -->
+          <div
+            onclick="showPage('cp-page')"
+            class="clickable-card bg-white p-6 rounded-xl card-shadow"
+          >
+            <h2
+              class="text-3xl font-bold text-indigo-800 mb-4 flex items-center"
+            >
+              <span class="mr-2 text-yellow-500">🔥</span> CP
+              <span class="ml-auto text-xl text-gray-400">→</span>
+            </h2>
+            <p class="text-gray-600 mb-4">
+              Our Sessions, Codeforces groups, and Vjudge resources. Click for
+              links.
+            </p>
+          </div>
+
+          <!-- OOP Card (Now Clickable) -->
+          <div
+            onclick="showPage('oop-page')"
+            class="clickable-card bg-white p-6 rounded-xl card-shadow"
+          >
+            <h2
+              class="text-3xl font-bold text-indigo-800 mb-4 flex items-center"
+            >
+              <span class="mr-2 text-green-500">🧩</span> OOP
+              <span class="ml-auto text-xl text-gray-400">→</span>
+            </h2>
+            <p class="text-gray-600 mb-4">
+              Mastering Object-Oriented concepts.
+            </p>
+          </div>
+
+          <!-- Database Card (Unchanged) -->
+          <section
+            class="bg-white p-6 rounded-xl card-shadow transition duration-300 hover:shadow-xl hover:translate-y-[-2px]"
+          >
+            <h2
+              class="text-3xl font-bold text-indigo-800 mb-4 flex items-center"
+            >
+              <span class="mr-2 text-blue-500">💾</span> Database
+            </h2>
+            <p class="text-gray-600 mb-4">be a real Software Engineer.</p>
+            <div class="text-center mt-6">
+              <span
+                class="inline-block bg-blue-100 text-blue-800 text-sm font-semibold px-3 py-1 rounded-full"
+              >
+                Coming Soon...
+              </span>
+            </div>
+          </section>
+
+          <!-- SOLID Principles Card (Unchanged) -->
+          <section
+            class="bg-white p-6 rounded-xl card-shadow transition duration-300 hover:shadow-xl hover:translate-y-[-2px]"
+          >
+            <h2
+              class="text-3xl font-bold text-indigo-800 mb-4 flex items-center"
+            >
+              <span class="mr-2 text-purple-500">📐</span> SOLID
+            </h2>
+            <p class="text-gray-600 mb-4">
+              Essential principles for maintainable and scalable software
+              design.
+            </p>
+            <div class="text-center mt-6">
+              <span
+                class="inline-block bg-purple-100 text-purple-800 text-sm font-semibold px-3 py-1 rounded-full"
+              >
+                Coming Soon...
+              </span>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <!-- 2. COMPETITIVE PROGRAMMING (CP) PAGE -->
+      <div id="cp-page" class="hidden">
+        <button
+          onclick="showMainPage()"
+          class="mb-6 text-indigo-600 hover:text-indigo-800 font-medium flex items-center transition duration-150"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-5 w-5 mr-1"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z"
+              clip-rule="evenodd"
+            />
+          </svg>
+          Back to Hub
+        </button>
+        <h2 class="text-4xl font-extrabold text-indigo-700 mb-8">
+          Competitive Programming (CP) Resources
+        </h2>
+
+        <div class="space-y-6">
+          <!-- 1. Our Sessions (YouTube Link) -->
+          <button
+            onclick="window.open('https://www.youtube.com/@icpc-thebes', '_blank')"
+            class="w-full bg-yellow-500 hover:bg-yellow-600 text-indigo-900 font-extrabold py-5 px-6 rounded-xl card-shadow text-2xl flex items-center justify-between transition duration-300 transform hover:scale-[1.01]"
+          >
+            <span>Our Sessions (YouTube Link)</span>
+            <span class="text-3xl">▶️</span>
+          </button>
+
+          <!-- 2. Codeforces Group Link -->
+          <button
+            onclick="window.open('https://codeforces.com/group/ad1tgTiYqR/contests/', '_blank')"
+            class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-extrabold py-5 px-6 rounded-xl card-shadow text-2xl flex items-center justify-between transition duration-300 transform hover:scale-[1.01]"
+          >
+            <span>Codeforces Level 0 Group Link</span>
+            <span class="text-3xl">🏆</span>
+          </button>
+
+          <!-- 3. Themed CP Problem Sets (Theme CP button) -->
+          <button
+            onclick="window.open('https://themecp.vercel.app/', '_blank')"
+            class="w-full bg-pink-500 hover:bg-pink-600 text-white font-extrabold py-5 px-6 rounded-xl card-shadow text-2xl flex items-center justify-between transition duration-300 transform hover:scale-[1.01]"
+          >
+            <span>Theme CP </span>
+            <span class="text-3xl">🧠</span>
+          </button>
+          <button
+            onclick="window.open('https://codeforces.com/group/p0p2Ou6qV2/contests/', '_blank')"
+            class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-extrabold py-5 px-6 rounded-xl card-shadow text-2xl flex items-center justify-between transition duration-300 transform hover:scale-[1.01]"
+          >
+            <span>Codeforces Contests Group Link</span>
+            <span class="text-3xl">🏆</span>
+          </button>
+          <button
+            onclick="window.open('https://vjudge.net/group/icpc-thebes-Level-1-2026', '_blank')"
+            class="w-full bg-yellow-500 hover:bg-yellow-600 text-indigo-900 font-extrabold py-5 px-6 rounded-xl card-shadow text-2xl flex items-center justify-between transition duration-300 transform hover:scale-[1.01]"
+          >
+            <span>Vjudge Level 1</span>
+            <span class="text-3xl">▶️</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- 3. OBJECT-ORIENTED PROGRAMMING (OOP) PAGE - UPDATED STRUCTURE -->
+      <div id="oop-page" class="hidden">
+        <button
+          onclick="showMainPage()"
+          class="mb-6 text-indigo-600 hover:text-indigo-800 font-medium flex items-center transition duration-150"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-5 w-5 mr-1"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z"
+              clip-rule="evenodd"
+            />
+          </svg>
+          Back to Hub
+        </button>
+        <h2 class="text-4xl font-extrabold text-indigo-700 mb-8">
+          Object-Oriented Programming (OOP) Resources
+        </h2>
+
+        <div class="space-y-6">
+          <!-- 1. Course Materials Button (Triggers Language Selection Modal) -->
+          <button
+            onclick="showLanguageSelection()"
+            class="w-full bg-green-500 hover:bg-green-600 text-white font-extrabold py-5 px-6 rounded-xl card-shadow text-2xl flex items-center justify-between transition duration-300 transform hover:scale-[1.01]"
+          >
+            <span>Course Materials (Select Language)</span>
+            <span class="text-3xl">📚</span>
+          </button>
+
+          <!-- 2. NEW Head First Book Link Button -->
+          <button
+            onclick="window.open('https://archive.org/details/isbn_9788184042214', '_blank')"
+            class="w-full bg-orange-500 hover:bg-orange-600 text-white font-extrabold py-5 px-6 rounded-xl card-shadow text-2xl flex items-center justify-between transition duration-300 transform hover:scale-[1.01]"
+          >
+            <span>Head First Book Link</span>
+            <span class="text-3xl">📖</span>
+          </button>
+
+          <!-- 3. Submit Progress Button (Google Form Link) -->
+          <button
+            onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSdyFkXTASum4i-F_JLcNI_RAmaJWhWfGpeJ2IMlCRS2enap6A/viewform?usp=header', '_blank')"
+            class="w-full bg-purple-500 hover:bg-purple-600 text-white font-extrabold py-5 px-6 rounded-xl card-shadow text-2xl flex items-center justify-between transition duration-300 transform hover:scale-[1.01]"
+          >
+            <span>Submit Progress Google Form Link</span>
+            <span class="text-3xl">📝</span>
+          </button>
+          <button
+            onclick="window.open('#', '_blank')"
+            class="w-full bg-yellow-500 hover:bg-yellow-600 text-indigo-900 font-extrabold py-5 px-6 rounded-xl card-shadow text-2xl flex items-center justify-between transition duration-300 transform hover:scale-[1.01]"
+          >
+            <span>How To Use internet archive </span>
+            <span class="text-3xl">▶️</span>
+          </button>
+          <button
+            onclick="window.open('https://youtube.com/playlist?list=PL54XbgUR5Uvz_lMaRuBS8icWPGp5dLyUU&si=Y8vfVJ55kjiVaJdl', '_blank')"
+            class="w-full bg-sky-500 hover:bg-sky-600 text-white font-extrabold py-5 px-6 rounded-xl card-shadow text-2xl flex items-center justify-between transition duration-300 transform hover:scale-[1.01]"
+          >
+            <span>OUR MEETS</span>
+            <span class="text-3xl">▶️</span>
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <!-- Quote Rotator: Centered Arabic motivational quotes -->
+    <section
+      id="quote-rotator"
+      class="max-w-3xl mx-auto my-12 p-8 bg-white rounded-xl card-shadow text-center"
+    >
+      <p
+        id="arabic-quote"
+        class="text-2xl leading-relaxed text-indigo-700 font-semibold"
+        role="status"
+        aria-live="polite"
+      >
+        لا تتوقف عندما تتعب، توقف عندما تنتهي.
+      </p>
+      <div class="mt-4 text-sm text-gray-500">
+        <span id="quote-count"></span>
+      </div>
+    </section>
+
+    <!-- 4. GENERAL MESSAGE MODAL (For general info, progress button, or final link destinations) -->
+    <div
+      id="messageModal"
+      class="fixed inset-0 bg-gray-600 bg-opacity-75 hidden items-center justify-center p-4 z-50"
+    >
+      <div
+        class="bg-white p-6 rounded-lg shadow-2xl max-w-sm w-full transform transition-all scale-100"
+      >
+        <h3 id="modalTitle" class="text-xl font-bold text-indigo-700 mb-3"></h3>
+        <p id="modalBody" class="text-gray-700 mb-6"></p>
+        <div class="flex justify-end">
+          <button
+            onclick="closeModal()"
+            class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded transition duration-150"
+          >
+            Got it!
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- 5. LANGUAGE SELECTION MODAL (Nested Modal for OOP Materials) -->
+    <div
+      id="languageSelectionModal"
+      class="fixed inset-0 bg-gray-600 bg-opacity-75 hidden items-center justify-center p-4 z-50"
+    >
+      <div
+        class="bg-white p-6 rounded-lg shadow-2xl max-w-lg w-full transform transition-all scale-100"
+      >
+        <h3 class="text-2xl font-bold text-indigo-700 mb-6 text-center">
+          Select Course Materials Language
+        </h3>
+        <div class="space-y-4">
+          <button
+            onclick="window.open('https://youtube.com/playlist?list=PLNFDrRZdysFxO0fmABq8Ai9Lya-7-VK92&si=Gt0pybfxdQZqUTub', '_blank')"
+            class="w-full bg-gray-700 hover:bg-gray-800 text-white font-bold py-3 px-4 rounded-xl transition duration-150 flex items-center justify-center text-xl"
+          >
+            <img
+              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg"
+              alt="C# logo"
+              class="w-8 h-8 mr-3"
+            />
+            C# Course Links
+          </button>
+          <button
+            onclick="window.open('https://youtube.com/playlist?list=PLCInYL3l2AagY7fFlhCrjpLiIFybW3yQv&si=rPfxYsDIUUTefi5r', '_blank')"
+            class="w-full bg-gray-700 hover:bg-gray-800 text-white font-bold py-3 px-4 rounded-xl transition duration-150 flex items-center justify-center text-xl"
+          >
+            <img
+              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg"
+              alt="Java logo"
+              class="w-8 h-8 mr-3"
+            />
+            Java Course Links
+          </button>
+          <button
+            onclick="window.open('https://youtube.com/playlist?list=PLCInYL3l2Aaiq1oLvi9TlWtArJyAuCVow&si=WX31NeN0cSeHwiyN', '_blank')"
+            class="w-full bg-gray-700 hover:bg-gray-800 text-white font-bold py-3 px-4 rounded-xl transition duration-150 flex items-center justify-center text-xl"
+          >
+            <img
+              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg"
+              alt="C++ logo"
+              class="w-8 h-8 mr-3"
+            />
+            C++ Course Links
+          </button>
+        </div>
+        <div class="flex justify-end mt-6">
+          <button
+            onclick="closeLanguageSelection()"
+            class="text-indigo-600 hover:text-indigo-800 font-bold py-2 px-4 rounded transition duration-150"
+          >
+            Close Selection
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- JavaScript for interactivity and navigation -->
+    <script src="script.js"></script>
+  </body>
+</html>

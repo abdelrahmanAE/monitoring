@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #f7f7f7; /* Light gray background */
+}
+
+.card-shadow {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+/* Custom style to make the clickable card look and feel like a button */
+.clickable-card {
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.clickable-card:hover {
+  box-shadow: 0 15px 20px -5px rgba(0, 0, 0, 0.15),
+    0 6px 8px -3px rgba(0, 0, 0, 0.1);
+  transform: translateY(-4px);
+}
+
+/* Quote rotator styling */
+#quote-rotator p {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  direction: rtl; /* Arabic reads right-to-left */
+}
+
+#quote-rotator {
+  background: linear-gradient(
+    135deg,
+    rgba(14, 165, 233, 0.06),
+    rgba(99, 102, 241, 0.04)
+  );
+}
+
+.quote-fade-enter {
+  opacity: 0;
+  transform: translateY(6px);
+}
+.quote-fade-leave {
+  opacity: 0;
+  transform: translateY(-6px);
+}
+
+/* Hide the counter per user request (no "2/10") */
+#quote-count {
+  display: none;
+}
